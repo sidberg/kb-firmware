@@ -9,8 +9,10 @@ enum layer_names {
 };
 
 const uint16_t PROGMEM tenkey[] = {MO(_LOWER), KC_LALT, COMBO_END};
+const uint16_t PROGMEM superlow[] = {KC_LGUI, KC_LALT, COMBO_END};
 combo_t key_combos[] = {
     COMBO(tenkey, MO(_TENKEY)),
+    COMBO(superlow, LM(_LOWER, MOD_LGUI)),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
